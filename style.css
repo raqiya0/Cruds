@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: #222;
+}
+.cruds{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: capitalize;
+}
+.input{
+    text-align: center;
+}
+input{
+    background: #111;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    outline: 3px solid transparent;
+    box-shadow: 0 0 10px rgb(0,0,0,.5);
+    transition: .2s ;
+}
+input::placeholder{
+    text-transform: capitalize;
+}
+input:focus{
+    /* : blue; */
+    outline-color: rgb(0, 0, 255,.5);
+}
+.price{
+    display: flex;
+    gap: 10px;
+}
+.price small{
+    position: relative;
+    top: 15px;
+    background:#ba0000 ;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    height: fit-content;
+}
+.price small::before{
+    content: "Total:";
+}
+
+.input button,.btnsearch button,#deleteAll button{
+    width: 80%;
+    margin: auto;
+    background:oklch(42.4% 0.199 265.638);
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 15px 0;
+    border:none;
+    box-shadow: 0 0 10px rgb(0, 0, 0,.8);
+    transition: .4s;
+}
+.input button:hover,.btnsearch button:hover{
+    background: oklch(28.3% 0.141 291.0655);
+
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
+    width: 85%;
+    margin: auto;
+}
+.btnsearch button{
+    width: 50%;
+}
+#deleteAll{
+    text-align: center;
+}
+#deleteAll button{
+    background: rgb(182, 3, 3);
+    width: 40%;
+    margin: 20px 0;
+}
+#deleteAll button:hover{
+    background: rgb(226, 3, 3);
+
+}
+#deleteAll{
+    /* display: none; */
+}
+table{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+thead th{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 2px;
+    border: 2px solid black;
+    background: oklch(42.4% 0.199 265.638);
+}
+tr td{
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid;
+}
+tr button{
+    background:blue ;
+    font-size: 20px;
+    margin: 5px;
+    /* display: block; */
+    padding: 5px 8px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    box-shadow: 0 0 10px rgb(0, 0, 0,.8);
+    transition: .4s;
+}
+tr button:hover{
+    background: rgb(1, 1, 85);
+}
