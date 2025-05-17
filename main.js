@@ -117,6 +117,9 @@ function showData(){
     if(datapro.length != 0){
         deleteAll.innerHTML = `<button onclick = deleteAllData()>delete (${datapro.length})</button>`
     }
+    else{
+        deleteAll.innerHTML = ''
+    }
 }
 showData()
 
